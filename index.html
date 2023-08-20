@@ -93,6 +93,26 @@
               onsubmit="return taskObj.addTask(this);"
               id="form-task-hour-calculator"
             >
+            <div class="form-group">
+              <label>New Assignee</label>
+              <input
+                type="text"
+                name="new_project"
+                id="add-project"
+                class="form-control"
+                placeholder="Enter Assignee Name"
+              />
+
+              <button
+                type="button"
+                onclick="taskObj.addProject();"
+                class="btn btn-primary"
+                style="margin-top: 10px"
+              >
+                Add Assignee
+              </button>
+            </div>
+              
               <div class="form-group">
                 <label>Assignee</label>
                 <select
@@ -103,25 +123,7 @@
                 ></select>
               </div>
 
-              <div class="form-group">
-                <label>New Assignee</label>
-                <input
-                  type="text"
-                  name="new_project"
-                  id="add-project"
-                  class="form-control"
-                  placeholder="Project Name"
-                />
-
-                <button
-                  type="button"
-                  onclick="taskObj.addProject();"
-                  class="btn btn-primary"
-                  style="margin-top: 10px"
-                >
-                  Add Assignee
-                </button>
-              </div>
+              
 
               <div class="form-group">
                 <label>Task</label>
